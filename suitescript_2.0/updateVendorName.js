@@ -4,33 +4,33 @@
  */
 define(['N/record'],
 
- function(record) {
+  function (record) {
 
- 	
- function beforeSubmit(context) {
 
-   var newRecord = context.newRecord;
-  
-   //SetFieldValue - VendorName
-   newRecord.setValue({
-     fieldId: 'vendorname',
-     value: 'Jenne'
-   });
-//GetFieldValue - InternalId
-var internalid =  newRecord.getValue({
- fieldId: 'internalid',
-});
+    function beforeSubmit(context) {
 
-//Log internal id value
-log.debug ({
- title: 'Success',
- details: internalid
- });
+      var newRecord = context.newRecord;
 
- }
+      //SetFieldValue - VendorName
+      newRecord.setValue({
+        fieldId: 'vendorname',
+        value: 'Jenne'
+      });
+      //GetFieldValue - InternalId
+      //var internalid = newRecord.getValue({
+        //fieldId: 'internalid',
+      //});
 
- return {
- beforeSubmit: beforeSubmit,
- };
+      //Log internal id value
+      log.debug({
+        title: 'Success',
+        details: internalid
+      });
 
- });
+    }
+
+    return {
+      beforeSubmit: beforeSubmit,
+    };
+
+  });
