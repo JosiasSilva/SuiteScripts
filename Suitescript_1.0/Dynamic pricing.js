@@ -1,4 +1,4 @@
-function ChangePrice(changeInternal) {
+function ChangePrice(changeID) {
 
   		
   
