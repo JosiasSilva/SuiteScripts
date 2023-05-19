@@ -1,4 +1,4 @@
-function ChangePrice(changeId) {
+function ChangePrice(change) {
 
   		
   
