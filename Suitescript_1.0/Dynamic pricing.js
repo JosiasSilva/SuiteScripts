@@ -1,4 +1,4 @@
-function ChangePrice(parameters) {
+function ChangePrice() {
 
   		
   
